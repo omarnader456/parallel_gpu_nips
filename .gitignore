@@ -1,0 +1,36 @@
+# NVIDIA SDKs and Archives
+*.tar.gz
+*.tar.xz
+*.zip
+TensorRT-*/
+cudnn-*/
+
+# Datasets and AI Model Outputs
+*.pcap
+*.csv
+*.npy
+*.model
+*.json
+
+# Compiled Object Files and Executables
+*.o
+xdp_user2
+trace_read
+xdp-loader
+
+# Python Caches
+__pycache__/
+*.pyc
+
+# DPDK / OS generated files
+.DS_Store
+# Python Environments
+venv/
+pythonmodels/venv/
+.env/
+
+# Catch-all for Large Archives
+*.tar.gz
+*.tar.xz
+*.zip
+*.engine
