@@ -61,7 +61,9 @@ make
  8. compile and run
   * cd ~/nips/xdpstack/ingress
   * make clean && make
-  * sudo ./xdp_user2 --in-memory -- -i veth_nips -S
+  * export the tensorrt library path then run the userspace program
+  * export LD_LIBRARY_PATH=$PWD/TensorRT-8.6.1.6/lib:$LD_LIBRARY_PATH
+  * sudo -E ./xdp_user2 --in-memory -- -i veth_nips -S
  9. start honeypot monitoring
   * sudo tcpdump -i honeypot_tap -n -e
  1. testing
